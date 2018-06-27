@@ -1,0 +1,19 @@
+margin auto pour qu'un élément se centre : mettre tous les élèments dans une div.
+
+mettre taille image direct dans le html pour un chargement plus rapide de la page (exp utilisateur +++).
+
+ne pas hésiter à utiliser l'éditeur du navigateur.
+
+vertical-align.
+
+position : relative ===  je peux déplacer comme je veux l'élément et n'impacte pas le code.
+position : absolute === change disposition de la page car c'est comme s'il n'existait pas, se place par rapport à son plus proche parent auquel on a donné une position.
+
+input[type = text]{} === ne concerne que les input de type text.
+
+margin : 30px(top) 20px(right) 30px(bottom) 20px(left)
+
+.container p{}=== au paragraphe dans le container.
+.container, p{} === au parent + enfants.
+
+
