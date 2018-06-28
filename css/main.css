@@ -97,22 +97,250 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+  *{
+    margin:0;
+    padding:0;
+  }
+
+  body{
+    font-family: sans-serif;
+  }
+/*haut de page fixe */
+nav{
+  position: fixed;
+  background-color: #f56b2a;
+  display: block;
+  width: 100%;
+  top: 0;
+}
+
+nav img{
+  width : 180px;
+  margin-left: 100px;
+  margin-top: 0px;
+}
+
+nav a{
+  color: white;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: -0.5px;
+  line-height: 60px;
+  margin-left: 20px;
+  font-weight: normal;
+}
+
+nav .connection{
+  font-size: 11px;
+  margin-left: 90px;
+  padding: 0px 20px 0px 20px;
+  border: 1px solid white;
+  border-top: none;
+  border-bottom: none;
+  height : 60%;
+  display: inline-block;
+}
+
+nav a:link{
+text-decoration:none;
+}
+
+.all{
+  display: inline-flex;
+}
+
+/*Gauche de la Page*/
+
+.PG{
+  width : 470px;
+}
+
+.PG h3{
+  color: black;
+  font-size: 13px;
+  margin-left: 100px;
+  margin-top: 90px;
+  line-height: 25px;
+}
+
+.PG span{
+  color : #f56b2a;
+}
 
 
+.PG a{
+  margin-left: 100px;
+  width: 300px;
+  color: absolute;
+}
 
+.sendButton, .sendButton2{
+  width:100%;
+  height:40px;
+  background-color:rgba(65, 131, 215, 1);
+  border-radius: 5px;
+  display:flex;
+  align-items:center;
+  text-decoration: none;
+  justify-content:center;
+  transition:0.5s ease 0s;
+  margin:15px;
+  font-size: 14px;
+}
 
+.sendButton{
+    color:white;
+}
+.sendButton2{
+  color:#4183d7;
+  border:1px solid #4183d7;
+  background-color:rgba(65, 131, 215, 0);
+}
 
+.sendButton:hover{
+  opacity:0.8;
+  text-decoration: none;
+}
 
+.sendButton2:hover{
+  text-decoration:none;
+  background-color:rgba(65, 131, 215, 0.2);
+}
+/*img france*/
 
+.carte{
+  width : 490px;
+  margin-left: 5px;
+  margin-top: 80px;
+}
 
+.carte img{
+  width : 450px;
+}
 
+/*Droite de la page*/
 
+.PD{
+  flex-direction: column;
+  margin-right: 5px;
+  color : blue;
+  margin-left: 9px;
+  font-size: 14px;
+  margin-top: 80px;
+}
 
+.PD .region a{
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  color: #3373ae;
+}
 
+.PD .region a:hover{
+  color: #f56b2a;
+  transition:0.5s ease 0s;
+}
 
+/*information*/
 
+.info{
+  width: 90%;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 70px;
+}
 
+.info a{
+  text-decoration: none;
+  color: #3373ae;
+}
 
+/*listing*/
+
+.listing{
+  background-color: #f2f2f2;
+  list-style-type:none;
+  padding: 15px 0px 15px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.L1, .L2, .L3, .L4{
+  width : 24%;
+}
+
+.L1{
+  margin-left: 110px;
+}
+
+.L4{
+  margin-right: 110px;
+}
+.listing .topl{
+  text-transform: uppercase;
+  font-size: 12px;
+  border-bottom: 1px solid #d1d1d1;
+  padding-right: 150px;
+  line-height: 30px;
+}
+
+.listing a{
+  text-decoration: none;
+  color:#3373ae;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: justify;
+}
+
+.listing a:hover{
+  text-decoration: underline;
+}
+
+/*Les infos*/
+
+.information{
+  background-color: #474747;
+  list-style-type:none;
+  padding: 15px 0px 15px 0px;
+  display: flex;
+  justify-content: space-around;
+  color : white;
+}
+
+.L5, .legales, .professionnels, .L6{
+  width : 24%;
+}
+
+.information h1{
+  font-size: 11px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #666666;
+  padding-right: 90px;
+  line-height: 30px;
+}
+
+.information li a{
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.information li a:hover{
+  text-decoration: underline;
+}
+
+.information img{
+  width : 100px;
+}
+
+.L5{
+  margin-left: 110px;
+}
+
+.L6{
+  margin-right: 110px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
