@@ -112,6 +112,7 @@ nav{
   display: block;
   width: 100%;
   top: 0;
+  font-weight: bold;
 }
 
 nav img{
@@ -126,14 +127,14 @@ nav a{
   font-size: 13px;
   letter-spacing: -0.5px;
   line-height: 60px;
-  margin-left: 20px;
+  margin-left: 5px;
   font-weight: normal;
 }
 
 nav .connection{
   font-size: 11px;
-  margin-left: 90px;
-  padding: 0px 20px 0px 20px;
+  margin-left: 100px;
+  padding: 0px 0px 0px 0px;
   border: 1px solid white;
   border-top: none;
   border-bottom: none;
@@ -143,6 +144,24 @@ nav .connection{
 
 nav a:link{
 text-decoration:none;
+}
+
+nav a:hover{
+  text-decoration: underline;
+}
+
+nav .connection:hover{
+  background-color: white;
+  transition:0.3s ease 0s;
+}
+
+nav .connection a{
+  padding: 30px 30px 30px 40px;
+}
+
+nav .connection a:hover{
+  text-decoration: none;
+  color: #f56b2a;
 }
 
 .all{
@@ -340,6 +359,56 @@ text-decoration:none;
 
 .L6{
   margin-right: 110px;
+}
+
+/*partenaires*/
+
+.partenaires{
+  text-align: center;
+  font-size: 13px;
+  color: white;
+  background-color: #474747;
+  padding: 12px 0px 12px 0px;
+  border: 1px solid #666666;
+  border-left: none;
+  border-right: none;
+}
+
+.partenaires a{
+  color: white;
+  text-decoration: none;
+}
+
+.partenaires a:hover{
+  text-decoration: underline;
+}
+
+/*footer*/
+
+footer {
+  background-color: #474747;
+  color: white;
+  font-size: 13px;
+  justify-content: space-around;
+  display: flex;
+}
+
+footer p{
+  width : 15%;
+  text-align: left;
+  margin-left: 20px;
+  padding: 10px 0px 20px 0px;
+}
+
+footer img{
+  width : 30px;
+  border-radius: 5px;
+}
+
+footer .G{
+  width : 20%;
+  margin: 0px 0px 0px 400px;
+  padding: 5px 0px 20px 0px;
 }
 /* ==========================================================================
    Helper classes
