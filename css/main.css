@@ -120,6 +120,10 @@ nav img{
   margin-left: 100px;
   margin-top: 0px;
 }
+nav .menu{
+  display: none;
+}
+
 
 nav a{
   color: white;
@@ -235,6 +239,10 @@ nav .connection a:hover{
 
 .carte img{
   width : 450px;
+}
+
+.carte select{
+  display: none;
 }
 
 /*Droite de la page*/
@@ -590,7 +598,6 @@ list-style-type:none;
 }
 
 .articlebox .A1  .titre{
-  position : relative;
   margin : 20px 50px 50px 20px;
   font-size: 18px;
   color : #336699;
@@ -600,32 +607,51 @@ list-style-type:none;
 .articlebox .A2  .titre{
   font-size: 18px;
   color : #336699;
+  position: absolute;
+  margin : 10px 20px 10px 300px;
+
 }
 .articlebox .A3  .titre{
+  margin : 20px 50px 20px 20px;
   font-size: 18px;
   color : #336699;
+  width : 20%;;
 }
 
-.articlebox .A1, .A3 ul li{
+.articlebox .A1 .titre{
+  position: absolute;
+  margin : 10px 20px 10px 300px;
+}
+
+.articlebox .A1 ul{
   list-style-type: none;
   height: 10%;
+  margin : 85px 10px 10px 20px;
 }
 
-.articlebox .A2 ul li{
+.articlebox .A2 ul{
   list-style-type: none;
-  height : 10%;
+  height: 10%;
+  margin : 70px 10px 10px 20px;
+}
+
+.articlebox .A3 ul{
+  list-style-type: none;
+  position: absolute;
+  height: 10%;
+  margin : 70px 0px 10px 300px;
 }
 
 .articlebox p{
   margin-top: 200px;
-  margin-left: 15px;
+  margin-left: 250px;
   font-size: 12px;
   width : 20%;
 }
 
 .articlebox .A2 p{
   margin-top: 150px;
-  margin-left: 40px;
+  margin-left: 250px;
   font-size: 12px;
   width : 20%;
 }
@@ -636,12 +662,6 @@ list-style-type:none;
   width : 20%;
 }
 
-.articlebox .A1  ul{
-  list-style-type: none;
-  width : 10%;
-  height: 10%;
-  display: block;
-}
 
 .articlebox .A2 {
   text-decoration: none;
@@ -666,6 +686,21 @@ list-style-type:none;
   margin : 10px 20px 10px 20px;
 }
 
+.A1:hover{
+  background-color: #e6e6e6;
+  transition:0.4s ease 0s;
+}
+
+.A2:hover{
+  background-color: #e6e6e6;
+  transition:0.4s ease 0s;
+}
+
+.A3:hover{
+  background-color: #e6e6e6;
+  transition:0.4s ease 0s;
+}
+
 .nbrepages{
   list-style-type: none;
   margin: 10px 0px 10px 0px;
@@ -685,6 +720,204 @@ list-style-type:none;
   color: blue;
   background-color: #f2f2f2;
   border-radius: 3px;
+}
+
+/* page contact*/
+
+.main-annonce{
+  width:85%;
+  height:auto;
+  display:block;
+  margin:auto;
+  margin-top:75px;
+}
+.main-annonce h1{
+  font-size:1.2em;
+  color:#989898;
+  border-bottom:1px solid #ccc;
+  font-weight:600;
+  margin-bottom:40px;
+}
+.votre_annonce{
+  border-bottom:1px solid #ccc;
+}
+.main-annonce h2{
+  width:99%;
+  color:white;
+  background-color:#666;
+  font-size:1em;
+  font-weight:400;
+  line-height:1.5;
+  padding:10px 0 10px 10px;
+  border-bottom:1px solid #ccc;
+}
+.left_annonce, .right_annonce{
+  height:auto;
+}
+.left_annonce{
+  border-left:1px solid #ccc;
+  padding:5px;
+  padding-left:15px;
+}
+
+.category select{
+  margin: 20px 0px 0px 10px;
+  width : 39%;
+  height: 35px;
+  background-color: white;
+  border : 1px solid lightgrey;
+  border-radius: 4px;
+}
+.main-annonce h3{
+  margin-top: 10px;
+  font-size:0.9em;
+}
+.left_annonce input[type="checkbox"]{
+  vertical-align: bottom;
+  position: relative;
+  top: -1px;
+}
+.law{
+  background-color: #ffeebf;
+}
+.law p{
+  padding:10px;
+}
+.left_annonce select{
+  width:90%;
+  height:45px;
+}
+.title_annonce input{
+  width:90%;
+  height:25px;
+  padding-left:10px;
+}
+.text_annonce input{
+  width:90%;
+  height:200px;
+  padding-left:10px;
+}
+.price_annonce input{
+  width:50%;
+  height:25px;
+  padding-left:10px;
+}
+.photos{
+  border-left:1px solid #ccc;
+  border-right:1px solid #ccc;
+}
+.photos img{
+  padding:10px;
+}
+.semi_annonce{
+  display:flex;
+  margin-top:-14px;
+}
+.right_annonce{
+  border-right:1px solid #ccc;
+}
+
+.semi_loca{
+  display:flex;
+  border-bottom:1px solid #ccc;
+  border-right:1px solid #ccc;
+  border-left:1px solid #ccc;
+  margin-top:-14px;
+  padding:10px;
+}
+.left_loca, .right_loca{
+  height:auto;
+}
+.left_loca{
+  padding:5px;
+  padding-left:15px;
+}
+.ville input{
+  width:90%;
+  height:25px;
+  padding-left:10px;
+}
+.adresse input[type="text"]{
+  width:60%;
+  height:25px;
+  padding-left:10px;
+}
+.adresse input[type="button"]{
+  width:29%;
+  padding:6px;
+}
+.info_adresse{
+  background-color: #d9e6f7;
+}
+.info_adresse p{
+  padding:10px;
+}
+
+.right_loca img{
+  display:block;
+  margin:auto;
+  padding:5px;
+  margin-top: 5px;
+}
+.infos{
+  width:100%;
+  height:auto;
+  border-bottom:1px solid #ccc;
+  border-left:1px solid #ccc;
+  border-right:1px solid #ccc;
+}
+.main-infos{
+  width:100%;
+  padding-left:10px;
+}
+.main-infos input{
+  height:25px;
+}
+.infos input[type="checkbox"]{
+  vertical-align: bottom;
+  position: relative;
+  top: -1px;
+
+}
+.checkit ul{
+  position:relative;
+  list-style-type: none;
+  margin-left : 10px;
+}
+.checkit li{
+  line-height:25px;
+}
+.obligatoire{
+  text-align:right;
+}
+.button_send{
+  background-color: #4c94ef;
+  color: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:40px;
+  width : 200px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+.footer_annonce{
+  width:100%;
+  height:60px;
+  padding-left: 9.5%;
+  margin-left: -9%;
+  padding-right: 8.3%;
+  background-color:#474747;
+  color:white;
+  margin-top:30px;
+  display:flex;
+  align-items:left;
+  text-align: left;
+}
+
+.footer_annonce p{
+  padding-left: 50px;
 }
 
 /* ====================
@@ -720,6 +953,7 @@ list-style-type:none;
     width: 1px;
     white-space: nowrap; /* 1 */
 }
+
 
 /*
  * Extends the .visuallyhidden class to allow the element
@@ -774,8 +1008,118 @@ list-style-type:none;
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+
+  nav a{
+    display: none;
+  }
+
+  nav{
+    height : 70px;
+  }
+
+  nav .logo{
+   margin-left: 70px;
+   display: flex;
+  }
+  nav .menu{
+    display: flex;
+    position: relative;
+    width : 14%;
+    height : 50%;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    vertical-align: middle;
+    margin: -45px 0px 20px 20px;
+    background-color: white;
+    color: #f56b2a;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  nav a:link{
+    text-decoration: none;
+  }
+
+  nav a:hover{
+    color: #4183d7;
+    background-color:#9aebfe ;
+    transition:0.3s ease 0s;
+  }
+
+  .PD, .listing, .information{
+    display: none;
+  }
+
+  .partenaires{
+    display: none;
+  }
+
+  .PG{
+    width : 60%;
+  }
+  .PG h3{
+     margin-left: 10px;
+     text-align: center;
+     width : 65%;
+     font-size: 12px;
+  }
+
+  .PG a{
+     margin-left: 10px;
+     margin-bottom: 20px;
+  }
+
+  .carte img{
+    width : 300px;
+    justify-content: center;
+    margin: 200px 0px 10px -400px;
+  }
+
+  .carte select{
+    display: flex;
+    width : 70%;
+    height : 10%;
+    padding-left: 5px;
+    margin: 10px 0px 0px -400px;
+    color :black;
+    font-size: 20px;
+  }
+
+  .info{
+    margin-left: 2s5px;
+    text-align: center;
+    width : 85%;
+    font-size: 12px;
+  }
+
+  footer{
+    width : 110%;
+  }
+
+  footer p{
+    margin-left : -180px;
+  }
+
+  footer .G{
+    display: none;
+  }
+
+  .photos{
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+  }
+  .photos img{
+    width : 110px;
+    padding:10px;
+  }
+  .right_loca img{
+    display: none;
+  }
+
 }
 
 @media print,
